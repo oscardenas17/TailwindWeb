@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .link{
-    @apply text-white block p-5 font-bold hover:text-yellow-500 
+    @apply text-white p-1 block font-bold hover:text-yellow-500 
 }
 
 .link-border-yellow{
-    @apply border-4 border-yellow-400 text-white font-bold p-2 rounded-full align-middle transition duration-500 hover:bg-white hover:text-black
+    @apply border-4 border-yellow-400 text-white font-bold p-1 md:p-2 rounded-full align-middle transition duration-500 hover:bg-white hover:text-black text-center
 }
