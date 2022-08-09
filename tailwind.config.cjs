@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme =>({
+        'wave-pattern': 'url(../img/wave-white.png)'
+      })
+    },
   },
   plugins: [],
 }

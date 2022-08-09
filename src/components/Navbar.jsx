@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-
+  console.log(navbar);
   return (
-    <nav className=" w-full  md:bg-blue-500  xl:bg-gray-700  bg-red-600   ">
-      <div className=" justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
+    <nav className=" w-full  bg-blue-500  xl:bg-gray-700    ">
+      <div className=" justify-between px-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-2 md:py-2 md:block">
           
             <Link to="/" className=" flex items-center md:block">
               <img src="../../public/img/logo.png"  alt="Logo" />
@@ -60,7 +60,7 @@ const Navbar = () => {
             }`}
           >
             
-            <div className=" flex flex-col m-0 md:flex-row items-center justify-center space-y-2  md:space-x-6 md:space-y-0">
+            <div className=" flex flex-col m-0 md:flex-row items-center justify-center space-y-2  md:space-x-4 md:space-y-0  ">
               <Link to="/" className="link">
                 Home
               </Link>
@@ -70,12 +70,12 @@ const Navbar = () => {
               <Link to="/explore" className="link">
                 Explore
               </Link>
-              <Link to="/bowser" className="link-border-yellow row">
+              <Link to="/bowser" className="link-border-yellow  my-4 inline-block">
                 Bowser Fury
               </Link>
               <Link
                 to="/buy"
-                className="rounded-full bg-red-500 text-white font-bold px-6 py-2  md:py-3 hover:bg-white hover:text-black transition duration-500 text-center"
+                className="my-4 inline-block rounded-full bg-red-500 text-white font-bold px-6 py-2 md:py-3 hover:bg-white hover:text-black transition duration-500 text-center"
               >
                 Buy Now
               </Link>
