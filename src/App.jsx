@@ -7,7 +7,7 @@ import Play from "./pages/Play";
 
 function App() {
   return (
-    <div className="">
+    <>
        
      <BrowserRouter>
      
@@ -20,7 +20,7 @@ function App() {
         </Routes>
    
     </BrowserRouter> 
-    </div>
+    </>
   );
 }
 
